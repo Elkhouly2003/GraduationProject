@@ -1,4 +1,4 @@
 package com.example.GraduationBackend.configuration;
-//test
+//test22
 public class configTest {
 }
