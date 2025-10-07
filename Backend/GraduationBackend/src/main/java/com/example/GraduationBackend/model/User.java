@@ -27,9 +27,6 @@ public class User {
     @Column(name = "user_name")
     private String username;
 
-    @Column(name = "user_password")
-    private String password;
-
     @Column(name = "user_email")
     private String email;
 
@@ -41,7 +38,6 @@ public class User {
 
     @Column(name = "user_role")
     private String role;
-
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "image_id")

@@ -20,7 +20,7 @@ public class Category {
     private Integer id;
 
     @Column(unique=true , nullable=false ,name = "catgegory_name")
-    private String name;
+    private String eventType;
 
     @OneToMany(mappedBy = "category" ,cascade = CascadeType.ALL)
     private List<PlaceCategory> placeCategories;

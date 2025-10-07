@@ -31,7 +31,7 @@ public class Place {
     @Column(name = "place_city")
     private String city;
 
-    @Column(name = "place_city")
+    @Column(name = "place_state")
     private String state;
 
     @Column(name = "place_country")
@@ -45,6 +45,12 @@ public class Place {
 
     @Column(name = "place_capacity")
     private Integer capacity ;
+
+    @Column(name = "place_reviews")
+    private Integer reviews ;
+
+    @Column(name = "is_certified")
+    private Boolean certified ;         // by default false admin is responsible for this
 
     @OneToMany(mappedBy = "place" , cascade = CascadeType.ALL ,orphanRemoval = true)
     private List<PlaceCategory> placeCategories;
