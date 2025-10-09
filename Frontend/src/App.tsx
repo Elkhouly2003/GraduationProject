@@ -7,6 +7,7 @@ import { auth0Config } from './lib/auth0Config';
 import LoginPage from './Auth/LoginPage';
 import { HomePage } from './layout/HomePage/HomePage';
 import { Navbar } from './layout/NavbarAndFooter/Navbar';
+
 import { Footer } from './layout/NavbarAndFooter/Footer';
 
 const Auth0ProviderWithHistory = ({ children }: { children: React.ReactNode }) => {
