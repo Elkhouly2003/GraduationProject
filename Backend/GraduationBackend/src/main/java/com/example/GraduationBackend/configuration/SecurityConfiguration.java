@@ -1,4 +1,4 @@
-package com.equipment.equipmentRental.config;
+package com.example.GraduationBackend.configuration;
 
 import com.okta.spring.boot.oauth.Okta;
 import org.springframework.context.annotation.Bean;

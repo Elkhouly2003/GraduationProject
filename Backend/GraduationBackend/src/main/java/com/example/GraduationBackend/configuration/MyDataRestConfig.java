@@ -1,7 +1,7 @@
-package com.equipment.equipmentRental.config;
+package com.example.GraduationBackend.configuration;
 
 
-import com.equipment.equipmentRental.entity.Equipment;
+
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
@@ -22,11 +22,11 @@ public class MyDataRestConfig implements RepositoryRestConfigurer {
                 HttpMethod.DELETE,
                 HttpMethod.PUT};
         //appear id in json
-        config.exposeIdsFor(Equipment.class);
+//        config.exposeIdsFor(Equipment.class);
 //        config.exposeIdsFor(Review.class);
 //        config.exposeIdsFor(Message.class);
 
-        disableHttpMethods(Equipment.class, config, theUnsupportedActions);
+//        disableHttpMethods(Equipment.class, config, theUnsupportedActions);
 //        disableHttpMethods(Review.class, config, theUnsupportedActions);
 //        disableHttpMethods(Message.class, config, theUnsupportedActions);
 
